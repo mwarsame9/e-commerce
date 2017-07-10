@@ -23,10 +23,13 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'paperclip', '~> 4.1'
 
+gem 'rest-client'
+
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'dotenv-rails'
   gem 'rspec-rails'
   gem 'launchy'
   gem 'capybara'
@@ -44,7 +47,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-  gem 'faker', github: 'stympy/faker'
+  gem 'faker', '>= 1.8.0'
   gem "letter_opener", :group => :development
 end
 
