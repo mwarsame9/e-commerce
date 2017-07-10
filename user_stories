@@ -3,15 +3,16 @@ User Stories: '*' = COMPLETE
 As a user, I should be able to add and remove items from my shopping cart.*
 As a user, I'd like to see my shopping cart updated when I make changes.*
 As a user, I'd like to see the number of items in my shopping cart and the total cost of my order in the navbar (and not just on the shopping cart page).*
+As a user, I'd like to be able to see and add reviews to products.*
 
 As a user, I'd like to be able to see which items are on sale, along with the percentage they've been discounted.
-
-As a user, I'd like to be able to tag products to "Save for Later." These will show up on my shopping cart page but will not be in my shopping cart. I should be able to move them into my shopping cart if I want.
-
+-----------------------------------> scope
 
 As a user, I'd like to see if there are fewer than ten of an item in stock.
+-----------------------------------> scope
 
-As a user, I'd like to be able to see and add reviews to products.
+As a user, I'd like to be able to tag products to "Save for Later." These will show up on my shopping cart page but will not be in my shopping cart. I should be able to move them into my shopping cart if I want.
+-------------------------------------> Wish List/controller
 
 
 As a user, my shopping cart should be cleared once I've completed my order.
