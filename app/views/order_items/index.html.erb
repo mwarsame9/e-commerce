@@ -1,0 +1,11 @@
+<h1>Order_items</h1>
+
+<ul>
+  <% @order_items.each do |order_item| %>
+    <li><%= link_to "Show", order_item_path(order_item) %></li>
+  <% end %>
+</ul>
+
+<hr>
+
+<%= link_to "New Order_item", new_order_item_path %>

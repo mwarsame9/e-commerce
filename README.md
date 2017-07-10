@@ -2,7 +2,7 @@ _E-Commerce_
 
 #### _This is an application for an e-commerce store. It allows a user to create orders by adding products to a shopping cart. The user can then view the quantity and total price or items in shopping cart. The application uses one-to-many relationship between product and order item, and one-to-many relationship between order and order item._
 
-#### By _**Mohamed Warsame **_
+#### By _**Mohamed Warsame & Jin Camou**_
 
 ## Setup/Installation Requirements
 
@@ -29,4 +29,4 @@ $ rails s
 
 *This is web page is licensed under the MIT License.*
 
-Copyright (c) 2017 **_Mohamed Warsame_**
+Copyright (c) 2017 **_Mohamed Warsame & Jin Camou_**
