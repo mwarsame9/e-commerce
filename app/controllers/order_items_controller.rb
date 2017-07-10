@@ -1,20 +1,20 @@
-class Order_itemsController < ApplicationController
+class OrderItemsController < ApplicationController
   def index
-    @order_items = Order_item.all
+    @order_items = OrderItem.all
   end
 
   def show
-    @order_item = Order_item.find(params[:id])
+    @order_item = OrderItem.find(params[:id])
   end
 
   def new
-    @order_item = Order_item.new
+    @order_item = OrderItem.new
   end
 
   def create
-    @order_item = Order_item.new(order_item_params)
+    @order_item = OrderItem.new(order_item_params)
     if @order_item.save
-    flash[:notice] = "Order_item successfully added!"
+    flash[:notice] = "OrderItem successfully added!"
       redirect_to  order_items_path
     else
       render :new
@@ -22,13 +22,13 @@ class Order_itemsController < ApplicationController
   end
 
   def edit
-    @order_item = Order_item.find(params[:id])
+    @order_item = OrderItem.find(params[:id])
   end
 
   def update
-    @order_item= Order_item.find(params[:id])
+    @order_item= OrderItem.find(params[:id])
     if @order_item.update(order_item_params)
-      flash[:notice] = "Order_item successfully updated!"
+      flash[:notice] = "OrderItem successfully updated!"
       redirect_to order_items_path
     else
       render :edit
@@ -36,9 +36,9 @@ class Order_itemsController < ApplicationController
   end
 
   def destroy
-    @order_item = Order_item.find(params[:id])
+    @order_item = OrderItem.find(params[:id])
     if @order_item.destroy
-      flash[:notice] = "Order_item successfully removed!"
+      flash[:notice] = "OrderItem successfully removed!"
       redirect_to order_items_path
     end
   end
