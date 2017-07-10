@@ -255,6 +255,12 @@
         1,
         1,
         1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
         1,
         null,
         null
@@ -279,22 +285,43 @@
         1,
         null,
         1,
-        2,
-        2,
+        null,
         2,
         null
       ],
       "/Users/Guest/Desktop/ecommerce/app/models/order.rb": [
         1,
+        null,
         1,
         1,
         1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
         null
       ],
       "/Users/Guest/Desktop/ecommerce/spec/models/product_spec.rb": [
         1,
         null,
         1,
+        2,
         2,
         2,
         2,
@@ -305,9 +332,26 @@
         1,
         1,
         1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/ecommerce/spec/models/review_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/Guest/Desktop/ecommerce/app/models/review.rb": [
+        1,
+        1,
+        1,
+        1,
         null
       ]
     },
-    "timestamp": 1499707116
+    "timestamp": 1499730247
   }
 }

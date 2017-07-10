@@ -1,0 +1,10 @@
+<%= render "layouts/errors", :object => @review %>
+
+<%= form_for [@product, @review] do |f| %>
+<%= f.label :author %>
+<%= f.text_field :author %>
+<%= f.label :content %>
+<%= f.text_field :content %>
+<%= f.hidden_field(:product_id, :value => @product.id) %>
+  <%= f.submit %>
+<% end %>

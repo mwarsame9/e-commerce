@@ -1,6 +1,13 @@
 <h1><%= @product.name %></h1>
 <h4>Price: $<%= @product.price %></h4>
 
+<h5><%= link_to "Leave a review", new_product_review_path(@product) %></h5>
+<ul>
+  <% @product.reviews.each do |review| %>
+  <li><%= review.content %></li>
+  <% end %>
+</ul>
+
 <p><%= link_to "Edit", edit_product_path(@product) %></p>
 <p><%= link_to "Delete", product_path(@product),
                          :data => {:confirm => "You sure?",
