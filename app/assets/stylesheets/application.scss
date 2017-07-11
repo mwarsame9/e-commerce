@@ -22,10 +22,38 @@
   background-color: #DDA15E;
 }
 
-span {
+.nav-content {
   float: right;
   color: white;
   margin-left: 16px;
   margin-top: 14px;
   margin-right: 8px;
+}
+
+.panel-heading {
+  font-size: 18px;
+  text-align: left;
+}
+
+.panel {
+  border: solid 1px;
+  box-shadow: none;
+}
+
+.body {
+  float: right;
+  // color: #DDA15E;
+  margin-left: 16px;
+  // margin-top: 14px;
+  margin-right: 8px;
+
+}
+
+.price {
+  float: right;
+}
+
+.cart {
+  float: right;
+  color: green;
 }
