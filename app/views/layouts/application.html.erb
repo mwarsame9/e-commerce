@@ -18,7 +18,7 @@
           <li class="home"><%= link_to "Home", products_path %></li>
           <span class="nav-content"><li>Total: <%= number_to_currency current_order.total_price %></li></span>
           <span class="nav-content"><li>(<%= current_order.total_quantity %>)</li></span>
-          <span class="nav-content"><li><%= link_to "My Cart", cart_path %></li></span>
+          <li class="nav-cart"><%= link_to "My Cart", cart_path %></li>
 
         </ul>
 

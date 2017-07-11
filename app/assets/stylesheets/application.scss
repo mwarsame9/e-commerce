@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 .navbar-nav {
   border-bottom: 1px solid black;
   width: 100%;
@@ -8,8 +9,19 @@
   height: 40px;
   color: white;
 }
+
 .home:hover {
   font-size: 28px;
+}
+
+.nav-cart:hover {
+  font-size: 28px;
+  color: white;
+}
+
+.nav-cart {
+  text-align: right;
+  color: white;
 }
 
 .container {
@@ -42,11 +54,8 @@
 
 .body {
   float: right;
-  // color: #DDA15E;
   margin-left: 16px;
-  // margin-top: 14px;
   margin-right: 8px;
-
 }
 
 .price {
@@ -56,4 +65,14 @@
 .cart {
   float: right;
   color: green;
+  background: white;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #D7E9F5;
 }
