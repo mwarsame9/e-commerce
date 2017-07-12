@@ -1,7 +1,9 @@
 class ProductsController < ApplicationController
+
   def index
     @products = Product.all
     @order_item = current_order.order_items.new
+
   end
 
   def show
@@ -16,7 +18,10 @@ class ProductsController < ApplicationController
     @product = Product.new(product_params)
     if @product.save
     flash[:notice] = "Product successfully added!"
-      redirect_to  products_path
+      respond_to do |format|
+        format.html { redirect_to products_path }
+        format.js
+      end
     else
       render :new
     end

@@ -1,7 +1,7 @@
 <h1><%= @product.name %></h1>
 <h4>Price: $<%= @product.price %></h4>
 
-<h5><%= link_to "Leave a review", new_product_review_path(@product) %></h5>
+<h5><%= link_to "Leave a review", new_product_review_path(@product), id: "new_review_link", remote: true %></h5>
 <ul>
   <% @product.reviews.each do |review| %>
   <li><%= review.content %></li>
