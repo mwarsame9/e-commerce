@@ -1,5 +1,5 @@
 <%= link_to "New Product", new_product_path, id:"product_form", remote: true %>
-<br>
+<hr>
 <div class="container">
   <div class="row">
     <% @products.each do |product| %>
@@ -9,7 +9,7 @@
             <span class="price"><%= number_to_currency product.price %></span>
           </div>
           <div class="panel-body">
-            <%= form_for @order_item do |f| %>
+            <%= form_for @order_item, remote: true do |f| %>
             <%= f.hidden_field :product_id, value: product.id %>
             <span class="body">
               <%= f.label :quantity %>
@@ -22,7 +22,6 @@
                 ]), {} %>
               </span><br><br>
               <span class="cart"><%= f.submit "Add to cart" %></span>
-
             <% end %>
           </div>
         </div>
